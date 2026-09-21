@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CyberSafe is an educational cyber crime awareness and digital safety portal."
+    />
+    <title>CyberSafe — Cyber Crime Awareness & Digital Safety</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" id="home">
+      <nav class="navbar container" aria-label="Primary navigation">
+        <a class="brand" href="#home" aria-label="CyberSafe home">
+          <span class="brand-mark" aria-hidden="true">CS</span>
+          <span>Cyber<span>Safe</span></span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="primaryNav"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <div class="nav-links" id="primaryNav">
+          <a href="#home">Home</a>
+          <a href="#case-studies">Case Studies</a>
+          <a href="#threats">Threats</a>
+          <a href="#scam-detector">Scam Detector</a>
+          <a href="#cyber-laws">Cyber Laws</a>
+          <a href="#safety">Safety</a>
+        </div>
+
+        <div class="nav-search">
+          <label class="sr-only" for="globalSearch">Search CyberSafe</label>
+          <input
+            id="globalSearch"
+            type="search"
+            placeholder="Search safety topics..."
+            autocomplete="off"
+          />
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">
+              <span class="status-dot"></span> DIGITAL SAFETY AWARENESS
+            </p>
+            <h1>Think Before<br /><span>You Click.</span></h1>
+            <p class="hero-text">
+              Understand cyber threats. Recognize scams. Protect yourself.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#case-studies"
+                >Explore Case Studies <span>→</span></a
+              >
+              <a class="btn btn-secondary" href="#scam-detector"
+                >Check a Suspicious Situation</a
+              >
+            </div>
+            <p class="awareness-note">
+              ⌁ Awareness is the first layer of cybersecurity.
+            </p>
+          </div>
+
+          <div
+            class="cyber-visual reveal"
+            aria-label="Decorative cybersecurity dashboard illustration"
+          >
+            <div class="orb orb-one"></div>
+            <div class="orb orb-two"></div>
+            <div class="visual-panel">
+              <div class="visual-top">
+                <span class="tiny-pill">SECURE MODE</span>
+                <span class="signal">● ● ●</span>
+              </div>
+              <div class="shield">
+                <div class="shield-inner">✓</div>
+              </div>
+              <div class="visual-lines">
+                <span style="width: 82%"></span>
+                <span style="width: 62%"></span>
+                <span style="width: 72%"></span>
+              </div>
+              <div class="visual-stats">
+                <div><strong>24/7</strong><small>Awareness</small></div>
+                <div><strong>10</strong><small>Safety Checks</small></div>
+                <div><strong>0</strong><small>Data Stored</small></div>
+              </div>
+            </div>
+            <div class="float-card card-a">⚠ <span>Verify first</span></div>
+            <div class="float-card card-b">
+              ✓ <span>Protect your data</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats section">
+        <div class="container">
+          <div class="section-heading compact">
+            <p class="eyebrow">AWARENESS SNAPSHOT</p>
+            <h2>Cyber safety starts with recognizing patterns.</h2>
+            <p>
+              This portal turns common scam patterns into practical learning.
+            </p>
+          </div>
+          <div class="stats-grid">
+            <article class="stat-card">
+              <span>01</span><strong>Pause</strong>
+              <p>Slow down when a message creates pressure or fear.</p>
+            </article>
+            <article class="stat-card">
+              <span>02</span><strong>Verify</strong>
+              <p>
+                Use an official channel instead of a contact supplied by a
+                stranger.
+              </p>
+            </article>
+            <article class="stat-card">
+              <span>03</span><strong>Protect</strong>
+              <p>
+                Keep passwords, OTPs, PINs and sensitive information private.
+              </p>
+            </article>
+            <article class="stat-card">
+              <span>04</span><strong>Report</strong>
+              <p>
+                Preserve evidence and use the appropriate reporting channel.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="case-studies">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">I4C / CYBER DIGEST PATTERNS</p>
+            <h2>Case Studies & Scam Patterns</h2>
+            <p>
+              The supplied assignment asks for I4C Cyber Digest-based entries.
+              The supplied brief did not contain the underlying digest records,
+              so the cards below use only scam patterns explicitly named in the
+              brief and publicly available I4C awareness material; exact
+              victim-level details are not fabricated.
+            </p>
+          </div>
+          <div class="case-grid" id="caseGrid"></div>
+        </div>
+      </section>
+
+      <section class="section threat-section" id="threats">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">KNOW THE SIGNALS</p>
+            <h2>Common Cyber Threats</h2>
+            <p>
+              Filter the cards by the main risk area and learn the warning
+              signs.
+            </p>
+          </div>
+          <div
+            class="filter-bar"
+            id="threatFilters"
+            role="group"
+            aria-label="Threat filters"
+          >
+            <button class="filter-btn active" data-filter="all" type="button">
+              All
+            </button>
+            <button class="filter-btn" data-filter="financial" type="button">
+              Financial
+            </button>
+            <button class="filter-btn" data-filter="identity" type="button">
+              Identity
+            </button>
+            <button class="filter-btn" data-filter="social" type="button">
+              Social Engineering
+            </button>
+            <button class="filter-btn" data-filter="shopping" type="button">
+              Online Shopping
+            </button>
+            <button class="filter-btn" data-filter="employment" type="button">
+              Employment
+            </button>
+          </div>
+          <div class="threat-grid" id="threatGrid"></div>
+        </div>
+      </section>
+
+      <section class="section detector-section" id="scam-detector">
+        <div class="container detector-grid">
+          <div class="section-heading">
+            <p class="eyebrow">EDUCATIONAL TOOL</p>
+            <h2>Scam Detector</h2>
+            <p>
+              Answer the questions about a suspicious situation. The result is
+              an educational risk indicator, not a professional fraud-detection
+              system.
+            </p>
+            <div class="notice">
+              No personal information is requested, stored or transmitted.
+            </div>
+          </div>
+          <form class="detector-card" id="scamForm">
+            <div class="question">
+              <span>01</span
+              ><label>Did someone contact you unexpectedly?</label>
+              <div class="choice">
+                <label><input type="radio" name="q1" value="yes" /> Yes</label
+                ><label><input type="radio" name="q1" value="no" /> No</label>
+              </div>
+            </div>
+            <div class="question">
+              <span>02</span
+              ><label>Are they asking for an OTP, PIN or password?</label>
+              <div class="choice">
+                <label><input type="radio" name="q2" value="yes" /> Yes</label
+                ><label><input type="radio" name="q2" value="no" /> No</label>
+              </div>
+            </div>
+            <div class="question">
+              <span>03</span
+              ><label>Are they creating urgency or threatening you?</label>
+              <div class="choice">
+                <label><input type="radio" name="q3" value="yes" /> Yes</label
+                ><label><input type="radio" name="q3" value="no" /> No</label>
+              </div>
+            </div>
+            <div class="question">
+              <span>04</span
+              ><label>Are they promising guaranteed returns?</label>
+              <div class="choice">
+                <label><input type="radio" name="q4" value="yes" /> Yes</label
+                ><label><input type="radio" name="q4" value="no" /> No</label>
+              </div>
+            </div>
+            <div class="question">
+              <span>05</span
+              ><label>Are they asking you to transfer money?</label>
+              <div class="choice">
+                <label><input type="radio" name="q5" value="yes" /> Yes</label
+                ><label><input type="radio" name="q5" value="no" /> No</label>
+              </div>
+            </div>
+            <div class="question">
+              <span>06</span
+              ><label
+                >Are they asking you to install an unknown application?</label
+              >
+              <div class="choice">
+                <label><input type="radio" name="q6" value="yes" /> Yes</label
+                ><label><input type="radio" name="q6" value="no" /> No</label>
+              </div>
+            </div>
+            <div class="question">
+              <span>07</span
+              ><label
+                >Are they impersonating police, government or bank
+                officials?</label
+              >
+              <div class="choice">
+                <label><input type="radio" name="q7" value="yes" /> Yes</label
+                ><label><input type="radio" name="q7" value="no" /> No</label>
+              </div>
+            </div>
+            <button class="btn btn-primary full" type="submit">
+              Check Risk Level
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section" id="cyber-laws">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">LEGAL AWARENESS</p>
+            <h2>Cyber Law Guide</h2>
+            <p>
+              These summaries are educational only. Whether a provision applies
+              depends on the facts and the applicable law.
+            </p>
+          </div>
+          <div class="law-grid">
+            <article class="law-card">
+              <span>IT ACT • 66C</span>
+              <h3>Identity Theft</h3>
+              <p>
+                Addresses fraudulent or dishonest use of another person's
+                electronic signature, password or other unique identification
+                feature.
+              </p>
+              <small
+                >Example: misuse of another person's password or unique digital
+                identifier may be relevant depending on the facts.</small
+              >
+            </article>
+            <article class="law-card">
+              <span>IT ACT • 66D</span>
+              <h3>Cheating by Personation</h3>
+              <p>
+                Addresses cheating by personation through a communication device
+                or computer resource.
+              </p>
+              <small
+                >Example: an online impersonation scheme used to cheat someone
+                may be relevant depending on the facts.</small
+              >
+            </article>
+            <article class="law-card">
+              <span>BNS • 318</span>
+              <h3>Cheating</h3>
+              <p>
+                The Bharatiya Nyaya Sanhita, 2023 contains provisions dealing
+                with cheating and dishonest inducement.
+              </p>
+              <small
+                >Example: a fraudulent representation that induces a person to
+                part with property may be relevant depending on the
+                facts.</small
+              >
+            </article>
+            <article class="law-card">
+              <span>BNS • 319</span>
+              <h3>Cheating by Personation</h3>
+              <p>
+                The BNS contains a specific provision dealing with cheating by
+                personation.
+              </p>
+              <small
+                >Example: pretending to be another person to obtain a benefit
+                may be relevant depending on the facts.</small
+              >
+            </article>
+          </div>
+          <div class="legal-disclaimer">
+            This section is for educational awareness and is not legal advice.
+          </div>
+        </div>
+      </section>
+
+      <section class="section ethics-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">DIGITAL CITIZENSHIP</p>
+            <h2>Digital Ethics</h2>
+          </div>
+          <div class="ethics-grid">
+            <article>
+              <span>01</span>
+              <h3>Protect personal information</h3>
+              <p>
+                Share sensitive information only when there is a clear, trusted
+                reason.
+              </p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Respect privacy</h3>
+              <p>
+                Do not expose, misuse or distribute another person's private
+                information.
+              </p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Never share OTPs</h3>
+              <p>Keep OTPs, PINs and passwords private.</p>
+            </article>
+            <article>
+              <span>04</span>
+              <h3>Verify before forwarding</h3>
+              <p>Check claims before spreading information.</p>
+            </article>
+            <article>
+              <span>05</span>
+              <h3>Do not impersonate</h3>
+              <p>Do not pretend to be another person or organization.</p>
+            </article>
+            <article>
+              <span>06</span>
+              <h3>Report suspicious activity</h3>
+              <p>
+                Use appropriate official channels when something looks wrong.
+              </p>
+            </article>
+            <article>
+              <span>07</span>
+              <h3>Respect intellectual property</h3>
+              <p>Use and share digital content responsibly.</p>
+            </article>
+            <article>
+              <span>08</span>
+              <h3>Use strong passwords</h3>
+              <p>Use unique passwords for important accounts.</p>
+            </article>
+            <article>
+              <span>09</span>
+              <h3>Enable MFA</h3>
+              <p>Use multi-factor authentication where available.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section emergency-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">IF SOMETHING GOES WRONG</p>
+            <h2>What To Do If You Are Scammed</h2>
+          </div>
+          <div class="steps">
+            <article class="step">
+              <span>01</span>
+              <div>
+                <h3>Stay calm</h3>
+                <p>
+                  Stop further communication or payment when you identify a
+                  suspicious situation.
+                </p>
+              </div>
+            </article>
+            <article class="step">
+              <span>02</span>
+              <div>
+                <h3>Contact your bank or payment provider</h3>
+                <p>
+                  If money was transferred, contact the relevant provider
+                  promptly using an official channel.
+                </p>
+              </div>
+            </article>
+            <article class="step">
+              <span>03</span>
+              <div>
+                <h3>Preserve evidence</h3>
+                <p>
+                  Keep screenshots, transaction IDs, phone numbers, emails, URLs
+                  and chat messages.
+                </p>
+              </div>
+            </article>
+            <article class="step">
+              <span>04</span>
+              <div>
+                <h3>Report through an appropriate official channel</h3>
+                <p>
+                  For cybercrime reporting in India, use the National Cyber
+                  Crime Reporting Portal or 1930 as appropriate.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="safety">
+        <div class="container safety-grid">
+          <div class="section-heading">
+            <p class="eyebrow">10-POINT CHECK</p>
+            <h2>Safety Checklist</h2>
+            <p>Complete the checklist locally. Nothing is saved to a server.</p>
+            <div class="progress-wrap" aria-live="polite">
+              <div class="progress-top">
+                <span id="progressText">0 / 10 completed</span
+                ><strong id="progressPercent">0%</strong>
+              </div>
+              <div class="progress-track">
+                <div class="progress-bar" id="progressBar"></div>
+              </div>
+            </div>
+          </div>
+          <div class="checklist" id="checklist">
+            <label><input type="checkbox" /> I use strong passwords.</label>
+            <label
+              ><input type="checkbox" /> I use different passwords for important
+              accounts.</label
+            >
+            <label><input type="checkbox" /> I have enabled MFA.</label>
+            <label
+              ><input type="checkbox" /> I never share OTP/PIN/password.</label
+            >
+            <label
+              ><input type="checkbox" /> I verify links before opening
+              them.</label
+            >
+            <label
+              ><input type="checkbox" /> I verify investment
+              opportunities.</label
+            >
+            <label><input type="checkbox" /> I keep software updated.</label>
+            <label
+              ><input type="checkbox" /> I avoid unknown applications.</label
+            >
+            <label
+              ><input type="checkbox" /> I review banking transactions.</label
+            >
+            <label
+              ><input type="checkbox" /> I know how to report cybercrime.</label
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section report-section">
+        <div class="container report-card">
+          <div>
+            <p class="eyebrow">OFFICIAL HELP</p>
+            <h2>Need to report cybercrime?</h2>
+            <p>
+              CyberSafe does not process complaints. Use the official National
+              Cyber Crime Reporting Portal or the 1930 cyber crime helpline for
+              appropriate cases.
+            </p>
+          </div>
+          <div class="report-actions">
+            <a
+              class="btn btn-primary"
+              href="https://www.cybercrime.gov.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Open cybercrime.gov.in ↗</a
+            >
+            <a class="helpline" href="tel:1930"
+              ><strong>1930</strong><span>Cyber Crime Helpline</span></a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="#home"
+            ><span class="brand-mark">CS</span
+            ><span>Cyber<span>Safe</span></span></a
+          >
+          <p>Cyber awareness for safer digital lives.</p>
+        </div>
+        <div>
+          <h3>Project</h3>
+          <a href="#case-studies">Case Studies</a><a href="#threats">Threats</a
+          ><a href="#scam-detector">Scam Detector</a>
+        </div>
+        <div>
+          <h3>Safety</h3>
+          <a href="#safety">Checklist</a><a href="#cyber-laws">Cyber Laws</a
+          ><a href="#home">Back to top</a>
+        </div>
+        <div>
+          <h3>Resources</h3>
+          <a
+            href="https://www.cybercrime.gov.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >National Cyber Crime Reporting Portal ↗</a
+          >
+          <p>Cyber Crime Helpline: <strong>1930</strong></p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>
+          CyberSafe is an educational academic project and is not an official
+          government website or legal service.
+        </p>
+        <p>Built with HTML5 • CSS3 • Vanilla JavaScript</p>
+      </div>
+    </footer>
+
+    <button
+      class="back-top"
+      id="backTop"
+      type="button"
+      aria-label="Back to top"
+    >
+      ↑
+    </button>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <div
+      class="modal"
+      id="modal"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalTitle"
+    >
+      <div class="modal-backdrop" data-close-modal></div>
+      <div class="modal-dialog" role="document">
+        <button
+          class="modal-close"
+          id="modalClose"
+          type="button"
+          aria-label="Close dialog"
+        >
+          ×
+        </button>
+        <p class="eyebrow" id="modalEyebrow">DETAIL</p>
+        <h2 id="modalTitle"></h2>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
